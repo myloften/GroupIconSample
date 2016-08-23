@@ -13,6 +13,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Created by Jaeger on 16/2/24.
+ *
+ * Email: chjie.jaeger@gamil.com
+ * GitHub: https://github.com/laobie
+ */
+/**
  * Created by loften on 16/4/21.
  */
 public class NineGridImageView<T> extends ViewGroup{
