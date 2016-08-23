@@ -19,7 +19,7 @@ import java.util.List;
  * GitHub: https://github.com/laobie
  */
 /**
- * Created by loften on 16/4/21.
+ * update by loften on 16/4/21.
  */
 public class NineGridImageView<T> extends ViewGroup{
 
