@@ -7,6 +7,7 @@ import android.widget.ImageView;
 
 import com.loften.groupiconsample.groupimageview.NineGridImageView;
 import com.loften.groupiconsample.groupimageview.NineGridImageViewAdapter;
+import com.loften.groupiconsample.utils.CircleImageTransformation;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -87,7 +88,10 @@ public class MainActivity extends AppCompatActivity {
         NineGridImageViewAdapter<String> mAdapter = new NineGridImageViewAdapter<String>() {
             @Override
             protected void onDisplayImage(Context context, ImageView imageView, String s) {
+                //显示图片
                 Picasso.with(context).load(s).placeholder(R.mipmap.ic_holding).error(R.mipmap.ic_error).into(imageView);
+                //显示圆形图片
+                //Picasso.with(context).load(s).transform(new CircleImageTransformation()).placeholder(R.mipmap.ic_holding).error(R.mipmap.ic_error).into(imageView);
             }
 
             @Override
